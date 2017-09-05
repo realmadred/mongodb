@@ -23,5 +23,9 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-web', version: '4.3.10.RELEASE'
     compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.10.RELEASE'
     compile group: 'org.springframework', name: 'spring-test', version: '4.3.10.RELEASE'
+    compile group: 'com.google.guava', name: 'guava', version: '23.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.6'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+
 
 }

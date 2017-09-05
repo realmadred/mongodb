@@ -15,6 +15,7 @@ public class MongoConst {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MongoConst.class);
     private static final Properties PROPERTIES = new Properties();
+    static final String ID = "_id";
 
     static {
         try {
