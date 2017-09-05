@@ -1,0 +1,27 @@
+group 'com.feng.mongo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    maven {
+        url 'https://repo.spring.io/libs-release'
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile ('org.springframework.data:spring-data-mongodb:1.10.6.RELEASE'){
+        exclude module: 'mongo-java-driver'
+    }
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.5.0'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.10.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.10.RELEASE'
+    compile group: 'org.springframework', name: 'spring-test', version: '4.3.10.RELEASE'
+
+}
