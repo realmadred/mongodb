@@ -15,11 +15,10 @@ public class MongoConst {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MongoConst.class);
     private static final Properties PROPERTIES = new Properties();
-    static final String ID = "_id";
 
     static {
         try {
-            PROPERTIES.load(MongoDBUtils.class.getClassLoader().getResourceAsStream("mongo.properties"));
+            PROPERTIES.load(MongoConst.class.getClassLoader().getResourceAsStream("mongo.properties"));
         } catch (IOException e) {
             LOGGER.error("加载配置文件失败！");
         }
@@ -77,5 +76,16 @@ public class MongoConst {
     // 最大等待时间
     static final int MAX_WAIT_TIME = getInt("mongo.maxWaitTime",120000);
 
+    // id
+    public static final String ID = "_id";
+
+    // 正则匹配开始
+    public static final String LIKE_START = "^.*";
+
+    // 正则匹配结束
+    public static final String LIKE_END = ".*$";
+
+    // 创建时间
+    public static final String CREATE_TIME = "createTime";
 
 }

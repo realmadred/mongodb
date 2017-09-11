@@ -1,5 +1,7 @@
 package com.feng.dao.util;
 
+import com.feng.dao.util.MongoConst;
+
 import java.io.Serializable;
 
 /**
@@ -32,6 +34,10 @@ public class SearchOption implements Serializable {
         return new SearchOption();
     }
 
+    public static SearchOption newOption(final int page, final int pageSize) {
+        return new SearchOption().setPage(page).setPageSize(pageSize);
+    }
+
     public static SearchOption newOption(final int page, final int pageSize, String order, int orderAsc) {
         return new SearchOption(page, pageSize, order, orderAsc);
     }
@@ -45,12 +51,17 @@ public class SearchOption implements Serializable {
         return this;
     }
 
+    private void setStart() {
+        this.start = (page - 1) * pageSize;
+    }
+
     public int getPage() {
         return page;
     }
 
     public SearchOption setPage(final int page) {
         this.page = page <= 0 ? 1 : page;
+        setStart();
         return this;
     }
 
@@ -74,6 +85,7 @@ public class SearchOption implements Serializable {
 
     public SearchOption setPageSize(final int pageSize) {
         this.pageSize = pageSize <= 0 ? 10 : (pageSize > MAX_PAGE_SIZE ? MAX_PAGE_SIZE : pageSize);
+        setStart();
         return this;
     }
 

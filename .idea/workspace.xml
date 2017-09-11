@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9a94ba4-a064-4170-b3ff-aaf50ce3b47d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_0_18.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_23_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_collections_commons_collections_3_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/util/SearchOption.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/com/feng/dao/util/MongoConst.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/com/feng/dao/util/MongoDBUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/com/feng/dao/NoticeDaoTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_feng_mongo___mongo_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_feng_mongo___mongo_1_0_SNAPSHOT_war__exploded_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/mongo_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/mongo_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/mongo_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/mongo_test.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/BaseNosql.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/PlatformLogNosql.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/SearchBaseNosql.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/WarningLogNosql.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/impl/BaseMongo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/impl/PlatformLogMongo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/impl/SearchBaseMongo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/impl/WarningLogMongo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/search/MongoCarSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/search/MongoMemberLogSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/search/MongoPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/search/MongoPlatformLogSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/search/MongoSort.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/search/MongoTime.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/feng/search/MongoWarningLogSearch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoConst.java" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoConst.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoDBUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoDBUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/feng/dao/util/SearchOption.java" afterPath="$PROJECT_DIR$/src/main/java/com/feng/dao/util/SearchOption.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -90,36 +89,13 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+    <leaf>
+      <file leaf-file-name="mongo.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mongo.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="378">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Document.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/org/bson/Document.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectId.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/org/bson/types/ObjectId.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5103">
-              <caret line="228" column="54" lean-forward="false" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="54" />
-              <folding>
-                <element signature="e#5469#5470#0" expanded="true" />
-                <element signature="e#5501#5502#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -515,10 +491,20 @@
         <option value="$PROJECT_DIR$/src/test/java/com/feng/dao/NoticeDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mongo.properties" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/util/SearchOption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoConst.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoConst.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoDBUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/search/MongoMemberLogSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/BaseNosql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/PlatformLogNosql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/SearchBaseNosql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/WarningLogNosql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/PlatformLogNosql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/impl/BaseMongo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/impl/PlatformLogMongo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/impl/WarningLogMongo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/util/SearchOption.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/feng/dao/impl/SearchBaseMongo.java" />
       </list>
     </option>
   </component>
@@ -558,8 +544,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -598,14 +582,14 @@
               <item name="mongodb" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="feng" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -616,18 +600,21 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/feng/dao" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.feng.dao" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.feng.dao.util" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.feng.dao.util" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\GitHub\mongodb\src\main\java\com\feng\dao" />
+      <recent name="H:\GitHub\mongodb\src\main\java\com\feng" />
       <recent name="C:\Users\Administrator\Desktop\iber\mongo\src\main\java\com\feng\dao\util" />
       <recent name="C:\Users\Administrator\Desktop\iber\mongo\src\main\webapp\WEB-INF" />
     </key>
@@ -847,8 +834,17 @@
       <updated>1504254297426</updated>
       <workItem from="1504254304670" duration="22888000" />
       <workItem from="1504575549157" duration="403000" />
-      <workItem from="1504576226657" duration="1789000" />
+      <workItem from="1504576226657" duration="2525000" />
+      <workItem from="1505094133805" duration="579000" />
     </task>
+    <task id="LOCAL-00001" summary="mongo操作">
+      <created>1504592779421</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1504592779421</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -884,14 +880,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25080000" />
+    <option name="totallyTimeSpent" value="26395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -915,6 +910,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -925,99 +921,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mongo操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="mongo操作" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/BeanUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/NoticeDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/feng/dao/NoticeDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/entity/mongo/Notice.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-mongodb/1.10.6.RELEASE/5c917b702a5f42b69b30e7fda656787d42403f9f/spring-data-mongodb-1.10.6.RELEASE-sources.jar!/org/springframework/data/mongodb/core/MongoDbUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/net/InetSocketAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4806">
-          <caret line="214" column="11" lean-forward="false" selection-start-line="214" selection-start-column="11" selection-end-line="214" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/com/mongodb/ServerAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="85" column="11" lean-forward="false" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/com/mongodb/MongoClientOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14906">
-          <caret line="902" column="51" lean-forward="true" selection-start-line="902" selection-start-column="51" selection-end-line="902" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/com/mongodb/MongoClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="237" column="72" lean-forward="false" selection-start-line="237" selection-start-column="72" selection-end-line="237" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/com/mongodb/Mongo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6129">
-          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/com/mongodb/DBObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/com/mongodb/util/JSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10516">
-          <caret line="131" column="6" lean-forward="false" selection-start-line="131" selection-start-column="6" selection-end-line="131" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/com/mongodb/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/com/mongodb/util/AbstractObjectSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/com/mongodb/DocumentToDBRefTransformer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1158,17 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/org/bson/types/ObjectId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5103">
-          <caret line="228" column="54" lean-forward="false" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="54" />
-          <folding>
-            <element signature="e#5469#5470#0" expanded="true" />
-            <element signature="e#5501#5502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/org/bson/codecs/ObjectIdGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -1211,21 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/org/bson/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mongo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1241,15 +1127,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/org/bson/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.5.0/fadd4f4ffb3e75c2d4b9de71961dddedfa8b295c/mongo-java-driver-3.5.0-sources.jar!/org/bson/types/ObjectId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="228" column="54" lean-forward="false" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoDBUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3321">
+          <caret line="88" column="5" lean-forward="true" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#MongoDBUtils#0" expanded="false" />
+            <element signature="initializer##0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#getDatabase#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#getCollection#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#getCollection#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#add#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#add#1;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#add#1;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#add#2;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#add#2;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#add#3;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#add#3;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#addMany#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#addMany#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#addMany#1;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#addMany#1;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#findById#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#findById#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#findById#1;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#getCount#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#getCount#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#getCount#1;class#MongoDBUtils#0" expanded="false" />
+            <element signature="method#getCount#1;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#getCount#2;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#getCount#3;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#find#0;class#MongoDBUtils#0" expanded="false" />
+            <element signature="docComment;method#find#1;class#MongoDBUtils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoConst.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="-1442">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/search/MongoCarSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1257,29 +1208,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/util/MongoDBUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/search/MongoTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5184">
-          <caret line="203" column="0" lean-forward="true" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/search/MongoSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/search/MongoWarningLogSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/WarningLogNosql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getDatabase#0;class#MongoDBUtils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/impl/BaseMongo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/impl/PlatformLogMongo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-659">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/impl/WarningLogMongo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/util/SearchOption.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="162">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/impl/SearchBaseMongo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/PlatformLogNosql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="324">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/SearchBaseNosql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/search/MongoMemberLogSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/search/MongoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/search/MongoPlatformLogSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/feng/dao/BaseNosql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mongo.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding />
         </state>
       </provider>
